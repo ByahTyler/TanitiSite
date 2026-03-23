@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lodging | Taniti</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f0f8ff;
+        }
+
+        .section-title {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .lodging-card {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+            background-color: #ffffff;
+        }
+
+        .lodging-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .lodging-img {
+            height: 180px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .filter-btn.active {
+            background-color: #046c7e;
+            color: white;
+        }
+
+        footer {
+            background-color: #0077b6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #046c7e;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">🏝️ Taniti</a>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="attractions.html">Attractions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="travel.html">Travel</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="lodging.html">Lodging</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dining.html">Dining</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- Title -->
+        <h2 class="section-title">Lodging in Taniti</h2>
+        <p class="text-center">
+            From budget-friendly hostels to luxury resorts, Taniti offers accommodations for every traveler.
+        </p>
+
+        <!-- Filter Buttons -->
+        <div class="text-center mb-4">
+            <button class="btn btn-outline-secondary filter-btn active" onclick="filterSelection('all')">All</button>
+            <button class="btn btn-outline-secondary filter-btn" onclick="filterSelection('resort')">Resorts</button>
+            <button class="btn btn-outline-secondary filter-btn" onclick="filterSelection('hotel')">Hotels</button>
+            <button class="btn btn-outline-secondary filter-btn" onclick="filterSelection('bnb')">B&Bs</button>
+            <button class="btn btn-outline-secondary filter-btn" onclick="filterSelection('hostel')">Hostels</button>
+        </div>
+
+        <!-- Lodging Cards -->
+        <div class="row g-4">
+
+            <!-- Resort -->
+            <div class="col-md-6 lodging-item resort">
+                <div class="lodging-card p-3">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945"
+                        class="lodging-img rounded mb-3">
+                    <h4>Taniti Grand Resort</h4>
+                    <p>⭐⭐⭐⭐</p>
+                    <p>Luxury beachfront resort with full amenities.</p>
+                    <div class="text-end">
+                        <a href="#" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hotel -->
+            <div class="col-md-6 lodging-item hotel">
+                <div class="lodging-card p-3">
+                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa"
+                        class="lodging-img rounded mb-3">
+                    <h4>Island Comfort Hotel</h4>
+                    <p>⭐⭐⭐</p>
+                    <p>Affordable and centrally located near attractions.</p>
+                    <div class="text-end">
+                        <a href="#" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- B&B -->
+            <div class="col-md-6 lodging-item bnb">
+                <div class="lodging-card p-3">
+                    <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511"
+                        class="lodging-img rounded mb-3">
+                    <h4>Seaside B&B</h4>
+                    <p>⭐⭐⭐⭐</p>
+                    <p>Charming family-owned bed and breakfast.</p>
+                    <div class="text-end">
+                        <a href="#" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hostel -->
+            <div class="col-md-6 lodging-item hostel">
+                <div class="lodging-card p-3">
+                    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267"
+                        class="lodging-img rounded mb-3">
+                    <h4>Backpacker Hostel</h4>
+                    <p>⭐⭐</p>
+                    <p>Budget-friendly stay for travelers and adventurers.</p>
+                    <div class="text-end">
+                        <a href="#" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Info Section -->
+        <div class="mt-5 p-4 bg-light rounded">
+            <h5>Important Information</h5>
+            <p>
+                Taniti offers a wide variety of lodging options, from inexpensive hostels to a large four-star resort.
+                Many small, family-owned hotels and bed and breakfasts provide a more personal experience.
+            </p>
+            <p>
+                All lodging options are strictly regulated and regularly inspected by the Tanitian government to ensure
+                safety and quality.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Taniti Tourism</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Filter Script -->
+    <script>
+        function filterSelection(category) {
+            let items = document.getElementsByClassName("lodging-item");
+
+            for (let i = 0; i < items.length; i++) {
+                items[i].style.display =
+                    (category === "all" || items[i].classList.contains(category))
+                        ? "block"
+                        : "none";
+            }
+
+            let buttons = document.getElementsByClassName("filter-btn");
+            for (let btn of buttons) {
+                btn.classList.remove("active");
+            }
+
+            event.target.classList.add("active");
+        }
+    </script>
+
+</body>
+
+</html>

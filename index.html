@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taniti Tourism</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f0f8ff;
+    }
+
+    .hero-slide {
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    /* Optional dark overlay for readability */
+    .hero-slide::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    .hero-slide>div {
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-title {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #0077b6;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #046c7e;">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">🏝️ Taniti</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="attractions.html">Attractions</a></li>
+          <li class="nav-item"><a class="nav-link" href="travel.html">Travel</a></li>
+          <li class="nav-item"><a class="nav-link" href="lodging.html">Lodging</a></li>
+          <li class="nav-item"><a class="nav-link" href="dining.html">Dining</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+
+      <!-- Beach -->
+      <div class="carousel-item active">
+        <div class="hero-slide d-flex align-items-center justify-content-center text-center text-white"
+          style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');">
+          <div>
+            <h1>Explore Taniti</h1>
+            <p>Beaches, adventure, and culture await</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rainforest -->
+      <div class="carousel-item">
+        <div class="hero-slide d-flex align-items-center justify-content-center text-center text-white"
+          style="background-image: url('https://images.unsplash.com/photo-1530215078880-605aa750b7bb');">
+          <div>
+            <h1>Lush Rainforests</h1>
+            <p>Discover nature like never before</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Volcano -->
+      <div class="carousel-item">
+        <div class="hero-slide d-flex align-items-center justify-content-center text-center text-white"
+          style="background-image: url('https://plus.unsplash.com/premium_photo-1691854351174-4568e73360dc');">
+          <div>
+            <h1>Volcanic Wonders</h1>
+            <p>Experience breathtaking views</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pubs -->
+      <div class="carousel-item">
+        <div class="hero-slide d-flex align-items-center justify-content-center text-center text-white"
+          style="background-image: url('https://images.unsplash.com/photo-1538488881038-e252a119ace7');">
+          <div>
+            <h1>Island Nightlife</h1>
+            <p>Relax and enjoy local pubs</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+
+  <!-- Intro Section -->
+  <div class="container">
+    <h2 class="section-title">Welcome to Taniti</h2>
+    <p class="text-center">
+      Taniti is a beautiful tropical island known for its beaches, culture, and relaxing atmosphere.
+      Whether you're looking for adventure or relaxation, Taniti offers something for everyone.
+    </p>
+    <p class="text-center">
+      Taniti is a small, tropical island in the Pacific. While the island has an area of less than 500 square miles, the
+      terrain is varied and includes both sandy and rocky beaches, a small but safe harbor, lush tropical rainforests,
+      and a mountainous interior that includes a small, active volcano. Taniti has an indigenous population of about
+      20,000.
+    </p>
+
+
+
+    <!-- Featured Sections -->
+    <div class="row mt-4">
+
+      <div class="col-md-4 text-center">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" class="img-fluid rounded">
+        <h4 class="mt-2">Attractions</h4>
+        <p>Explore beaches, rainforests, and local culture.</p>
+        <a href="attractions.html" class="btn btn-primary">Learn More</a>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945" class="img-fluid rounded">
+        <h4 class="mt-2">Lodging</h4>
+        <p>Find the perfect place to stay during your visit.</p>
+        <a href="lodging.html" class="btn btn-primary">Learn More</a>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" class="img-fluid rounded">
+        <h4 class="mt-2">Dining</h4>
+        <p>Enjoy a variety of local and international cuisine.</p>
+        <a href="dining.html" class="btn btn-primary">Learn More</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Taniti Tourism | Plan Your Visit Today</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

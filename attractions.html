@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Attractions | Taniti</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f0f8ff;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+      color: white;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .section-title {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #0077b6;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .card-taniti {
+        background-color: #f5e6d3;
+        border: 1px solid #ffcc80;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .reservations{
+        color:#046c7e;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #046c7e;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">🏝️ Taniti</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="attractions.html">Attractions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="travel.html">Travel</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lodging.html">Lodging</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dining.html">Dining</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-4">
+
+        <!-- Hero -->
+        <div class="hero">
+            <div>
+                <h1>Things to Do in Taniti</h1>
+                <p>Adventure, relaxation, and culture await</p>
+            </div>
+        </div>
+
+        <!-- Top Attractions -->
+        <h2 class="section-title">Top Attractions</h2>
+        <div class="row">
+
+            <div class="col-md-4 text-center">
+                <div class="ratio ratio-4x3">
+                    <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57" class="img-fluid object-fit-cover rounded">
+                </div>
+                <h4 class="mt-2">Beaches</h4>
+                <p>Enjoy white sandy beaches and crystal-clear water around the island.</p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <div class="ratio ratio-4x3">
+                    <img src="https://images.unsplash.com/photo-1530215078880-605aa750b7bb" class="img-fluid object-fit-cover rounded">
+                </div>
+                <h4 class="mt-2">Rainforest</h4>
+                <p>Explore lush tropical rainforests filled with wildlife and hiking trails.</p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <div class="ratio ratio-4x3">
+                    <img src="https://plus.unsplash.com/premium_photo-1691854351174-4568e73360dc" class="img-fluid object-fit-cover rounded">
+                </div>
+                <h4 class="mt-2">Volcano</h4>
+                <p>Visit Taniti’s active volcano and experience breathtaking views.</p>
+            </div>
+        </div>
+
+        <!-- Activities -->
+        <h2 class="section-title">Activities</h2>
+        <div class="row g-4">
+
+            <!-- Snorkeling -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 card-taniti">
+                    <div class="ratio ratio-4x3">
+                        <img src="https://images.unsplash.com/photo-1664922114319-4700c0ef74b1" class="card-img-top object-fit-cover">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="card-title mb-0">Snorkeling</h5>
+                            <small class="text-muted">Available Every Day</small>
+                        </div>
+                        <p class="card-text mt-2 background-color">
+                            Explore the local reefs and meet all sorts of marine life.
+                        </p>
+                        <div class="mt-auto text-end reservations">
+                            <a href="#" class="text-decoration-none fw-semibold">
+                                🗓️ Make Reservation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zip-lining -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 card-taniti">
+                    <div class="ratio ratio-4x3">
+                        <img src="https://images.unsplash.com/photo-1728572322143-bb19895b4678" class="card-img-top object-fit-cover">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="card-title mb-0">Zip-lining</h5>
+                            <small class="text-muted">Closed on Wednesdays</small>
+                        </div>
+                        <p class="card-text mt-2">
+                            Enjoy ziplines flying over local forests and beaches.
+                        </p>
+                        <div class="mt-auto text-end reservations">
+                            <a href="#" class="text-decoration-none fw-semibold" >
+                                🗓️ Make Reservation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fishing Tours -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 card-taniti">
+                    <div class="ratio ratio-4x3">
+                        <img src="https://images.unsplash.com/photo-1609859682240-6860cf3d99d5" class="card-img-top object-fit-cover">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="card-title mb-0">Fishing Tours</h5>
+                            <small class="text-muted">Available Every Day</small>
+                        </div>
+                        <p class="card-text mt-2">
+                            Go fishing with our local professionals and get the catch of your dreams.
+                        </p>
+                        <div class="mt-auto text-end reservations">
+                            <a href="#" class="text-decoration-none fw-semibold" >
+                                🗓️ Make Reservation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Museum -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 card-taniti">
+                    <div class="ratio ratio-4x3">
+                        <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744" class="card-img-top object-fit-cover">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="card-title mb-0">Museum</h5>
+                            <small class="text-muted">Closed Wed & Weekends</small>
+                        </div>
+                        <p class="card-text mt-2">
+                            Learn the history of paradise.
+                        </p>
+                        <div class="mt-auto text-end reservations">
+                            <a href="#" class="text-decoration-none fw-semibold" >
+                                🗓️ Make Reservation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Local Pubs -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 card-taniti">
+                    <div class="ratio ratio-4x3">
+                        <img src="https://images.unsplash.com/photo-1538488881038-e252a119ace7" class="card-img-top object-fit-cover">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="card-title mb-0">Local Pubs</h5>
+                            <small class="text-muted">Evenings Only</small>
+                        </div>
+                        <p class="card-text mt-2">
+                            Try the world-renowned Taniti Mojito.
+                        </p>
+                        <div class="mt-auto text-end reservations">
+                            <a href="#" class="text-decoration-none fw-semibold" >
+                                🗓️ Make Reservation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Local Brewery -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 card-taniti">
+                    <div class="ratio ratio-4x3">
+                        <img src="https://images.unsplash.com/photo-1625264412785-7c94942908a5" class="card-img-top object-fit-cover">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="card-title mb-0">Local Brewery</h5>
+                            <small class="text-muted">Fri & Sat Only</small>
+                        </div>
+                        <p class="card-text mt-2">
+                            Local beer and rum brewed right here in Taniti.
+                        </p>
+                        <div class="mt-auto text-end reservations">
+                            <a href="#" class="text-decoration-none fw-semibold" >
+                                🗓️ Make Reservation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 Taniti Tourism</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
